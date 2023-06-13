@@ -1,0 +1,12 @@
+{   
+    "dataname":"attraction",
+    "filedir":["raw","legaldata.csv"],
+    "graph":"K_5",
+    "num_classes":7,
+    "hyp":{
+        "batchsize":20000, 
+        "epochs":1000, 
+        "lr":0.001, 
+        "hidden":128
+    }
+}
