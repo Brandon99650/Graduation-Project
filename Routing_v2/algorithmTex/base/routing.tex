@@ -1,0 +1,64 @@
+\documentclass[16pt, a4paper]{article}
+\oddsidemargin=0pt
+\headheight=-20pt
+\voffset=-30pt
+
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+
+\begin{document}
+
+\begin{algorithm}
+\renewcommand{\thealgorithm}{}
+\caption{Generate recommend path}
+\begin{algorithmic}
+\State
+\Statex \textbf{Input : } $s$, $D$, $T$, $l$
+\State \quad $s$ : Source attraction
+\State \quad $D : \{$attraction$_i$ $|$ attraction$_i \in$ same region of $S\}, \forall$attraction$_i\in$ database
+\State \quad $T$ : The limitation of driving time for each 2 attractions
+\State \quad $l$ : Required number of tourist attraction in the recommend path
+\newline
+\Statex \textbf{Output : } recommend path, total driving time, $Labels$
+\newline
+\Statex \textbf{Initialize : }
+\State \quad cur $:= s$
+\State \quad $Labels:= s.Label$
+\State \quad $drivingtime := 0$
+\State \quad $Path:=\{s\}$
+\begin{algorithmic}[1]
+
+\While {$|Path| < l$}
+\State target $:= \emptyset$
+\State Candidate $\gets$ $\{c_j |$ d(cur, $c_j$) $\leq T\},\forall c_j\in D, c_j \neq$ cur
+\If{Candidate is empty }
+	\State \textbf{return} \textbf{NoCandidate}
+\EndIf
+\\
+\State $n_{max} \gets$ max(\#nonzero entry of ($Labels+c_i.Label$)),$\forall c_i \in$ Candidate
+\State Targets $\gets$ \textbf{argmax}$_{c_i}$(\#nonzero entry of ($Labels+c_i.Label$) )\\
+\If{$n_{max}$ doesn't improve}
+	\State target $\gets$ \textbf{argmin}$_{c_i}$(\textbf{Variance}(($Labels+c_i.Label$))+d(cur, $c_i$))
+	\State ,$\forall c_i \in$ Candidate
+\Else
+	\If{$|$targets$| == 1$}
+		\State target $\gets$ targets[0]
+	\ElsIf{$|$targets$| > 1$}
+		\State target $\gets$ \textbf{argmin}$_{t_i}$(\textbf{Variance}(($Labels+t_i.Label$))+d(cur, $t_i$))
+		\State ,$\forall t_i \in$ Targets
+	\EndIf
+\EndIf
+\\
+\State $Path \gets Path$  $\cup$ target 
+\State $drvingtime \gets$ d(cur, target)
+\State $Labels \gets Labels+$target.$Label$ 
+\State cur $\gets$ target
+\EndWhile
+\State \textbf{return} $Path, Labels, drivingtime$
+\end{algorithmic}
+\end{algorithmic}
+\end{algorithm}
+
+
+\end{document}

@@ -1,0 +1,249 @@
+{
+    "Taipei": {
+        "chi": [
+            "基隆市",
+            "新北市",
+            "臺北市"
+        ],
+        "en": [
+            "Keelung, Taiwan",
+            "New Taipei City, Taiwan",
+            "Taipei, Taiwan"
+        ],
+        "chi2": [
+            "基隆",
+            "新北",
+            "臺北"
+        ]
+    },
+    "Taoyuan": {
+        "chi": [
+            "桃園市"
+        ],
+        "en": [
+            "Taoyuan City, Taiwan"
+        ],
+        "chi2": [
+            "桃園"
+        ]
+    },
+    "Hsinchu": {
+        "chi": [
+            "新竹縣",
+            "新竹市"
+        ],
+        "en": [
+            "Hsinchu County, Taiwan",
+            "Hsinchu, Taiwan"
+        ],
+        "chi2": [
+            "新竹",
+            "新竹"
+        ]
+    },
+    "Miaoli": {
+        "chi": [
+            "苗栗市",
+            "苗栗縣"
+        ],
+        "en": [
+            "Miaoli City, Taiwan",
+            "Miaoli County, Taiwan"
+        ],
+        "chi2": [
+            "苗栗",
+            "苗栗"
+        ]
+    },
+    "Taichung": {
+        "chi": [
+            "臺中市"
+        ],
+        "en": [
+            "Taichung, Taiwan"
+        ],
+        "chi2": [
+            "臺中"
+        ]
+    },
+    "Changhua": {
+        "chi": [
+            "彰化縣",
+            "彰化市"
+        ],
+        "en": [
+            "Changhua County, Taiwan",
+            "Changhua City, Taiwan"
+        ],
+        "chi2": [
+            "彰化",
+            "彰化"
+        ]
+    },
+    "Nantou": {
+        "chi": [
+            "南投市",
+            "南投縣"
+        ],
+        "en": [
+            "Nantou City, Taiwan",
+            "Nantou County, Taiwan"
+        ],
+        "chi2": [
+            "南投",
+            "南投"
+        ]
+    },
+    "Yunlin": {
+        "chi": [
+            "雲林縣"
+        ],
+        "en": [
+            "Yunlin County, Taiwan"
+        ],
+        "chi2": [
+            "雲林"
+        ]
+    },
+    "Chiayi": {
+        "chi": [
+            "嘉義縣",
+            "嘉義市"
+        ],
+        "en": [
+            "Chiayi County, Taiwan",
+            "Chiayi, Taiwan"
+        ],
+        "chi2": [
+            "嘉義",
+            "嘉義"
+        ]
+    },
+    "Tainan": {
+        "chi": [
+            "臺南市"
+        ],
+        "en": [
+            "Tainan, Taiwan"
+        ],
+        "chi2": [
+            "臺南"
+        ]
+    },
+    "Kaohsiung": {
+        "chi": [
+            "高雄市"
+        ],
+        "en": [
+            "Kaohsiung, Taiwan"
+        ],
+        "chi2": [
+            "高雄"
+        ]
+    },
+    "Pingtung": {
+        "chi": [
+            "屏東縣",
+            "屏東市"
+        ],
+        "en": [
+            "Pingtung County, Taiwan",
+            "Pingtung City, Taiwan"
+        ],
+        "chi2": [
+            "屏東",
+            "屏東"
+        ]
+    },
+    "Yilan": {
+        "chi": [
+            "宜蘭縣",
+            "宜蘭市"
+        ],
+        "en": [
+            "Yilan County, Taiwan",
+            "Yilan City, Taiwan"
+        ],
+        "chi2": [
+            "宜蘭",
+            "宜蘭"
+        ]
+    },
+    "Hualien": {
+        "chi": [
+            "花蓮縣",
+            "花蓮市"
+        ],
+        "en": [
+            "Hualien County, Taiwan",
+            "Hualien City, Taiwan"
+        ],
+        "chi2": [
+            "花蓮",
+            "花蓮"
+        ]
+    },
+    "Taitung": {
+        "chi": [
+            "臺東市",
+            "臺東縣"
+        ],
+        "en": [
+            "Taitung City, Taiwan",
+            "Taitung County, Taiwan"
+        ],
+        "chi2": [
+            "臺東",
+            "臺東"
+        ]
+    },
+    "Penghu": {
+        "chi": [
+            "澎湖縣"
+        ],
+        "en": [
+            "Penghu, Taiwan"
+        ],
+        "chi2": [
+            "澎湖"
+        ]
+    },
+    "Kinmen": {
+        "chi": [
+            "金門縣"
+        ],
+        "en": [
+            "Kinmen County, Taiwan"
+        ],
+        "chi2": [
+            "金門"
+        ]
+    },
+    "Lienchiang": {
+        "chi": [
+            "連江縣"
+        ],
+        "en": [
+            "Lienchiang County, Taiwan"
+        ],
+        "chi2": [
+            "連江"
+        ]
+    },
+    "Greenisland": {
+        "chi": [
+            "綠島鄉"
+        ],
+        "chi2": [
+            "綠島"
+        ]
+    },
+    "Lanyu": {
+        "chi": [
+            "蘭嶼鄉"
+        ],
+        "chi2": [
+            "蘭嶼"
+        ]
+    }
+}

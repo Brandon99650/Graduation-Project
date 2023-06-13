@@ -1,0 +1,40 @@
+\documentclass[a4paper]{extarticle}
+\oddsidemargin=0pt
+\usepackage{algpseudocode}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+
+\begin{document}
+
+\begin{algorithm}
+\renewcommand{\thealgorithm}{}
+\begin{algorithmic}
+\State $cur$ := source , $Path$ := \{source\}
+\State $Labels := $ sourse.$Label$ , total travel time $:= 0$
+\caption{Generate diverse travel route}
+
+\While{$|Path| < WantedNumber$}
+\State $next := \emptyset$
+\State $Candidate \gets$ traveltime($cur, attraction_i) \leq$ time limitation,
+\State \qquad \qquad \qquad \ $ \forall attraction_i \in$ dataset 
+\State
+\If{\# nonzero entry of $Labels$ can't be improved}
+\State $next \gets$ \textbf{argmin}$_{c_i}$(\textbf{Var}$(Label+c_i.Label)$+traveltime($cur, c_i$)),
+\State \qquad \qquad $\forall c_i \in Candidate$
+\Else{}
+\State $Targets$ $\gets$ \textbf{argmax}$_{c_i}$ (\# nonzero entry of $Labels+ c_i.Label$),
+\State \qquad \qquad \ \ \ $\forall c_i \in Candidate$
+\State $next \gets$ \textbf{argmin}$_{t_i}$(\textbf{Var}$(Labels+t_i.Label)$+traveltime($cur, t_i$)),
+\State \qquad \qquad  $\forall t_i \in Targets$
+\EndIf
+\State 
+\State \textbf{Update :} 
+\State \quad $Path \gets Path \cup next$, $Labels \gets Labels+next.Label$
+\State \quad total travel time $\gets$ total travel time + traveltime($cur, next$) 
+\State \quad $cur \gets next$
+\EndWhile
+\State \textbf{return} $Path$, $Labels$, total travel time
+\end{algorithmic}
+\end{algorithm}
+
+\end{document}
